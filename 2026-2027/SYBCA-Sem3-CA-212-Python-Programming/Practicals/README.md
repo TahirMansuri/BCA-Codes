@@ -1,28 +1,32 @@
-# 🧪 CA-212: Python Programming - Practical Journal & Lab Slips
-### Class: SYBCA (Semester-III) | Academic Year: 2026–2027
-**Department of Computer Applications (BCA) | IMRD, Shahada**
+# 🧪 CA-214: Practical based on Python Programming
+### Class: SYBCA (Semester-III) | NEP-2020 Pattern | Academic Year: 2026–2027
+**Affiliated to**: Kavayitri Bahinabai Chaudhari North Maharashtra University (KBCNMU), Jalgaon  
+**Department of Computer Applications (BCA) | IMRD, Shahada**  
+**Instructor**: Mr. Tahir Husen Najir Mansuri *(HOD & Assistant Professor)*
 
 ---
 
-## 🗂️ Practical Structure & Index
-
-This folder contains two key sections:
-1. **[Practical-Sheets/](./Practical-Sheets)**: Academic write-up sheets for students' physical practical journals/files (contains Aim, Objectives, Algorithm, Source Code, Sample Inputs/Outputs, and Viva Questions).
-2. **[Lab-Programs/](./Lab-Programs)**: Verified `.py` executable source code files for each practical assignment.
+## 📑 Evaluation Scheme (Course: CA-214)
+- **Course Category**: DSC-10 (Practical)
+- **Total Hours**: 30 (4 Hours/Week) | **Credits**: 02
+- **College Assessment (CA)**: 20 Marks
+- **University Assessment (UA)**: 30 Marks
+- **Total**: 50 Marks
 
 ---
 
-## 📋 Academic Practical List
+## 📋 Official 11 Practical Assignments (KBCNMU Syllabus)
 
-| Practical No. | Title / Problem Domain | Practical Sheet (Write-Up) | Executable Code | Status |
+| Practical No. | Official Assignment Title | Write-Up Sheet (Journal) | Executable Code | Status |
 |:---:|:---|:---:|:---:|:---:|
-| **Practical 01** | Python Fundamentals, Operators & Type Casting | [📄 View Sheet](./Practical-Sheets/Practical-01-Sheet.md) | [🐍 Code](./Lab-Programs/practical_01_python_basics.py) | ✅ Ready |
-| **Practical 02** | Decision Making & Control Flow (`if-elif-else`) | [📄 View Sheet](./Practical-Sheets/) | [🐍 Code](./Lab-Programs/) | ⏳ Upcoming |
-| **Practical 03** | Looping Constructs & Mathematical Series | [📄 View Sheet](./Practical-Sheets/) | [🐍 Code](./Lab-Programs/) | ⏳ Upcoming |
-| **Practical 04** | String Manipulations & Built-in String Methods | [📄 View Sheet](./Practical-Sheets/) | [🐍 Code](./Lab-Programs/) | ⏳ Upcoming |
-| **Practical 05** | Python Lists & Tuples Operations | [📄 View Sheet](./Practical-Sheets/) | [🐍 Code](./Lab-Programs/) | ⏳ Upcoming |
-| **Practical 06** | Python Dictionaries & Sets Manipulation | [📄 View Sheet](./Practical-Sheets/) | [🐍 Code](./Lab-Programs/) | ⏳ Upcoming |
-| **Practical 07** | User-Defined Functions & Scope of Variables | [📄 View Sheet](./Practical-Sheets/) | [🐍 Code](./Lab-Programs/) | ⏳ Upcoming |
-| **Practical 08** | Lambda Functions & Mapping (`map`, `filter`) | [📄 View Sheet](./Practical-Sheets/) | [🐍 Code](./Lab-Programs/) | ⏳ Upcoming |
-| **Practical 09** | Modules & Standard Libraries (`math`, `random`) | [📄 View Sheet](./Practical-Sheets/) | [🐍 Code](./Lab-Programs/) | ⏳ Upcoming |
-| **Practical 10** | OOP: Classes, Objects, Constructors & Inheritance | [📄 View Sheet](./Practical-Sheets/) | [🐍 Code](./Lab-Programs/) | ⏳ Upcoming |
+| **Practical 01** | Python Environment Setup, Hello World & Arithmetic Calculations | [📄 View Sheet](./Practical-Sheets/Practical-01-Sheet.md) | [🐍 Code](./Lab-Programs/practical_01_python_basics.py) | ✅ Ready |
+| **Practical 02** | Find all Prime Numbers within a given range | [📄 View Sheet](./Practical-Sheets/) | [🐍 Code](./Lab-Programs/) | ⏳ Upcoming |
+| **Practical 03** | Print "n" terms of Fibonacci Series using Iteration | [📄 View Sheet](./Practical-Sheets/) | [🐍 Code](./Lab-Programs/) | ⏳ Upcoming |
+| **Practical 04** | String Slicing and String Operations | [📄 View Sheet](./Practical-Sheets/) | [🐍 Code](./Lab-Programs/) | ⏳ Upcoming |
+| **Practical 05** | Functions & Custom Modules in Python | [📄 View Sheet](./Practical-Sheets/) | [🐍 Code](./Lab-Programs/) | ⏳ Upcoming |
+| **Practical 06** | Python Lists & related built-in functions | [📄 View Sheet](./Practical-Sheets/) | [🐍 Code](./Lab-Programs/) | ⏳ Upcoming |
+| **Practical 07** | Python Dictionary & related built-in functions | [📄 View Sheet](./Practical-Sheets/) | [🐍 Code](./Lab-Programs/) | ⏳ Upcoming |
+| **Practical 08** | Python Tuples and Tuple Operations | [📄 View Sheet](./Practical-Sheets/) | [🐍 Code](./Lab-Programs/) | ⏳ Upcoming |
+| **Practical 09** | Classes and Objects in Python | [📄 View Sheet](./Practical-Sheets/) | [🐍 Code](./Lab-Programs/) | ⏳ Upcoming |
+| **Practical 10** | Method Overloading in Python | [📄 View Sheet](./Practical-Sheets/) | [🐍 Code](./Lab-Programs/) | ⏳ Upcoming |
+| **Practical 11** | Working with Python Libraries (NumPy / Pandas) | [📄 View Sheet](./Practical-Sheets/) | [🐍 Code](./Lab-Programs/) | ⏳ Upcoming |
