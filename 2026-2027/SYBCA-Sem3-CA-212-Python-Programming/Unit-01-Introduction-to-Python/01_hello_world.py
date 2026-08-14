@@ -1,20 +1,19 @@
 """
 ===================================================================
+Course Code  : CA - 212 (Python Programming)
+Subject      : Unit 1 - Introduction to Python
 Program Name : 01_hello_world.py
-Subject      : Python Programming (SYBCA - Sem 3)
-Institution  : IMRD, Shahada
+Institution  : S.T.E.S. & Co-Op. Ed. Soc. Ltd. IMRD, Shahada
+Faculty      : Mr. Tahir Mansuri (HOD & Asst. Prof.)
 Description  : Basic print statements and formatted output in Python.
 ===================================================================
 """
 
-# Simple print output
 print("Hello, Welcome to SYBCA Python Programming at IMRD Shahada!")
 
-# Printing multiple items with custom separators and end characters
 student_name = "BCA Student"
 semester = 3
-print("Student:", student_name, "| Semester:", semester, sep=" ")
+print("Student:", student_name, "| Semester:", semester)
 
-# Formatted strings (f-strings) - Modern Python Standard
 college = "IMRD, Shahada"
-print(f"Welcome to {college} - Academic Year 2026-2027")
+print("Welcome to", college, "- Academic Year 2026-2027")

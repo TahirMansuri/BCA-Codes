@@ -33,7 +33,7 @@ if 0 <= marks <= 100:
     else:
         grade = "Fail (F)"
         
-    print(f"Student Result: {grade}")
+    print("Student Result:", grade)
     
     # 3. Simple if & if-else
     if marks >= 40:

@@ -22,9 +22,9 @@ print()
 # 2. Multiplication Table using for loop
 print("\n--- 2. Multiplication Table Generator ---")
 table_num = 7
-print(f"Multiplication Table for {table_num}:")
+print("Multiplication Table for", table_num, ":")
 for i in range(1, 11):
-    print(f"{table_num} x {i:2d} = {table_num * i:2d}")
+    print(table_num, "x", i, "=", table_num * i)
 
 # 3. while loop - Sum of Digits of a Number
 print("\n--- 3. Calculate Sum of Digits using while loop ---")
@@ -37,4 +37,4 @@ while temp > 0:
     digit_sum += remainder
     temp = temp // 10
 
-print(f"Sum of digits in {number} = {digit_sum}")
+print("Sum of digits in", number, "=", digit_sum)
