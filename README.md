@@ -1,12 +1,20 @@
 # 🎓 BCA Academic Code Repository
-### RCPET's Institute of Management Research & Development (IMRD), Shahada
+### S.T.E.S. and Co-Op. Educational Society’s Ltd.
+## Institute of Management Research & Development (IMRD), Shahada
 **Department of Computer Applications (BCA)**  
-*Curated & Maintained by: Asst. Prof. & HOD*
+
+---
+
+👨‍🏫 **Curated & Maintained by:**  
+**Mr. Tahir Husen Najir Mansuri**  
+*Head of Department (HOD) & Assistant Professor*  
+*Lead System Engineer (12+ Years Industry Experience)*  
+[![GitHub Profile](https://img.shields.io/badge/GitHub-TahirMansuri-181717?style=flat&logo=github)](https://github.com/TahirMansuri)
 
 ---
 
 ## 📌 About This Repository
-Welcome to the central academic code repository for BCA students at **IMRD, Shahada**. This repository contains all lecture demonstrations, practical lab assignments, sample programs, and project codes for **FYBCA, SYBCA, and TYBCA**.
+Welcome to the central academic code repository for BCA students at **S.T.E.S. and Co-Op. Educational Society’s Ltd., Institute of Management Research & Development (IMRD), Shahada**. This repository contains all lecture demonstrations, practical lab assignments, sample programs, and project codes for **FYBCA, SYBCA, and TYBCA**.
 
 Instead of searching through chat groups, students can find all verified, well-commented source codes organized by **Academic Year**, **Class**, **Semester**, and **Subject**.
 
@@ -94,6 +102,16 @@ BCA-Codes/
 1. **Understand before typing**: Do not simply copy-paste code. Read the inline comments explaining the logic.
 2. **Execute on your machine**: Always run the code on your own machine and test with custom inputs.
 3. **Star the Repository**: Click the ⭐ **Star** button on the top right corner of GitHub to keep this repository easily accessible in your GitHub bookmarks.
+
+---
+
+## 👨‍🏫 Instructor & Maintainer Profile
+
+**Mr. Tahir Husen Najir Mansuri**  
+- **Designation**: Head of Department (HOD) & Assistant Professor (Department of Computer Applications)  
+- **Industry Role**: Lead System Engineer (12+ Years Experience)  
+- **Institution**: S.T.E.S. and Co-Op. Educational Society’s Ltd., Institute of Management Research & Development (IMRD), Shahada  
+- **GitHub**: [@TahirMansuri](https://github.com/TahirMansuri)  
 
 ---
 *For any queries, syllabus doubts, or lab issues, feel free to reach out during practical lab sessions or office hours.*
