@@ -12,27 +12,34 @@ Aim          : Write a program to find all prime numbers within a
 
 print("=== Prime Number Finder ===")
 
-# Taking range input from the user
-start_range = int(input("Enter the starting number of the range: "))
-end_range = int(input("Enter the ending number of the range: "))
+start_range = int(input("Enter the starting number: "))
+end_range = int(input("Enter the ending number: "))
 
-print(f"\nPrime numbers between {start_range} and {end_range} are:")
+print("Prime numbers between", start_range, "and", end_range, "are:")
 
-# Loop through the given range
 for num in range(start_range, end_range + 1):
-    # A prime number is always greater than 1
     if num > 1:
         is_prime = True
-        
-        # Check for factors from 2 up to num-1
-        # (Optimization: checking up to num // 2 or int(num**0.5) is better)
+        # Check if num has any factor other than 1 and itself
         for i in range(2, int(num ** 0.5) + 1):
             if (num % i) == 0:
                 is_prime = False
-                break # Not a prime number, break the loop
-                
-        # If no factors found, it is prime
+                break
         if is_prime:
             print(num, end="  ")
 
-print("\n\nProgram execution completed.")
+print("\nDone.")
+
+
+"""
+===========================
+Expected Output:
+===========================
+=== Prime Number Finder ===
+Enter the starting number: 1
+Enter the ending number: 30
+Prime numbers between 1 and 30 are:
+2  3  5  7  11  13  17  19  23  29  
+Done.
+===========================
+"""

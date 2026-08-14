@@ -10,33 +10,46 @@ Aim          : Write a program to demonstrate the use of slicing
 ===================================================================
 """
 
-print("=== String Slicing Demonstration ===\n")
+print("=== String Slicing Demonstration ===")
 
-# Daily Example: Processing a full name and extracting parts
 full_name = "Tahir Husen Najir Mansuri"
-print(f"Original String: '{full_name}'")
-print(f"Length of String: {len(full_name)} characters\n")
+print("Original String :", full_name)
+print("Length of String :", len(full_name))
 
-print("--- 1. Basic Slicing [start:stop] ---")
-# Extracting the first name (from index 0 to 4)
-first_name = full_name[0:5] 
-print(f"First Name [0:5] : {first_name}")
+print("\n--- Basic Slicing [start:stop] ---")
+print("First Name [0:5] :", full_name[0:5])
+print("Last Name  [18:] :", full_name[18:])
 
-# Extracting the last name (from index 18 to the end)
-last_name = full_name[18:] 
-print(f"Last Name [18:]  : {last_name}")
+print("\n--- Slicing with Step [start:stop:step] ---")
+print("Every 2nd char [0::2] :", full_name[0::2])
 
-print("\n--- 2. Slicing with Step [start:stop:step] ---")
-# Skipping characters (step = 2)
-skip_chars = full_name[0::2]
-print(f"Every 2nd char [0::2] : {skip_chars}")
+print("\n--- Negative Indexing ---")
+print("Last 7 chars [-7:] :", full_name[-7:])
 
-print("\n--- 3. Negative Indexing and Slicing ---")
-# Extracting the last 7 characters
-negative_slice = full_name[-7:]
-print(f"Last 7 chars [-7:] : {negative_slice}")
+# Negative step reverses the string
+print("\n--- Reversing a String ---")
+print("Reversed [::-1] :", full_name[::-1])
 
-print("\n--- 4. Reversing a String ---")
-# Using a negative step to reverse the string
-reversed_string = full_name[::-1]
-print(f"Reversed String [::-1] : {reversed_string}")
+
+"""
+===========================
+Expected Output:
+===========================
+=== String Slicing Demonstration ===
+Original String : Tahir Husen Najir Mansuri
+Length of String : 25
+
+--- Basic Slicing [start:stop] ---
+First Name [0:5] : Tahir
+Last Name  [18:] : Mansuri
+
+--- Slicing with Step [start:stop:step] ---
+Every 2nd char [0::2] : Ti ueNjrMnui
+
+--- Negative Indexing ---
+Last 7 chars [-7:] : Mansuri
+
+--- Reversing a String ---
+Reversed [::-1] : irunsaM rjaN nesuH rihaT
+===========================
+"""

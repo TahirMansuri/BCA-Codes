@@ -9,35 +9,51 @@ Aim          : Write a Program related to Functions & Modules.
 ===================================================================
 """
 
-# Importing a built-in module
 import math
 
-print("=== Functions and Modules Demonstration ===\n")
+print("=== Functions and Modules ===")
 
-# 1. Defining a user-defined function
+# User-defined function
 def calculate_circle_area(radius):
-    """This function calculates the area of a circle given its radius."""
-    # Using the 'math' module to get the value of pi
-    area = math.pi * (radius ** 2)
+    area = math.pi * radius * radius
     return area
 
-# 2. Function with default arguments
-def greet_user(name, course="BCA"):
-    """Greets the user. Default course is BCA."""
-    print(f"Welcome {name}! We hope you enjoy the {course} course.")
+def greet_user(name, course = "BCA"):
+    print("Welcome", name, "! You are enrolled in", course, "course.")
 
-# 3. Calling the functions
-print("--- Using User-Defined Functions ---")
-greet_user("Amit")                  # Uses default course
-greet_user("Priya", "MCA")          # Overrides default course
+print("\n--- User-Defined Functions ---")
+greet_user("Amit")
+greet_user("Priya", "MCA")
 
-print("\n--- Using Functions with Modules ---")
-r = 5.0
-circle_area = calculate_circle_area(r)
-print(f"The area of a circle with radius {r} is {circle_area:.2f}")
+print("\n--- Function with math Module ---")
+r = 5
+area = calculate_circle_area(r)
+print("Radius       :", r)
+print("Circle Area  :", area)
 
-# 4. Using more functions from the 'math' module
-print("\n--- Exploring 'math' Module ---")
-number = 16
-print(f"Square root of {number} is: {math.sqrt(number)}")
-print(f"Factorial of 5 is: {math.factorial(5)}")
+print("\n--- More math Module Functions ---")
+print("Square root of 16 :", math.sqrt(16))
+print("Factorial of 5    :", math.factorial(5))
+print("Value of Pi       :", math.pi)
+
+
+"""
+===========================
+Expected Output:
+===========================
+=== Functions and Modules ===
+
+--- User-Defined Functions ---
+Welcome Amit ! You are enrolled in BCA course.
+Welcome Priya ! You are enrolled in MCA course.
+
+--- Function with math Module ---
+Radius       : 5
+Circle Area  : 78.53981633974483
+
+--- More math Module Functions ---
+Square root of 16 : 4.0
+Factorial of 5    : 120
+Value of Pi       : 3.141592653589793
+===========================
+"""

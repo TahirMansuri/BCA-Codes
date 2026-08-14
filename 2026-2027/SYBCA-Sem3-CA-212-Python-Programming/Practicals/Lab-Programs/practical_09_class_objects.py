@@ -10,44 +10,64 @@ Aim          : Write a program to demonstrate the working of Class
 ===================================================================
 """
 
-print("=== Class and Objects in Python ===\n")
+print("=== Class and Objects in Python ===")
 
-# 1. Defining a Class
 class Student:
-    # Class Attribute (shared by all objects)
     college_name = "IMRD, Shahada"
 
-    # Constructor method to initialize attributes when an object is created
     def __init__(self, name, roll_no, course):
-        # Instance Attributes (unique to each object)
         self.name = name
         self.roll_no = roll_no
         self.course = course
 
-    # Instance Method
     def display_details(self):
-        print(f"Student Name : {self.name}")
-        print(f"Roll Number  : {self.roll_no}")
-        print(f"Course       : {self.course}")
-        print(f"College      : {Student.college_name}")
+        print("Student Name :", self.name)
+        print("Roll Number  :", self.roll_no)
+        print("Course       :", self.course)
+        print("College      :", Student.college_name)
         print("-" * 30)
 
-# 2. Creating Objects (Instances) of the Class
-print("Creating objects for 2 students...\n")
-
+# Creating objects of the Student class
 student1 = Student("Amit Sharma", 101, "BCA")
 student2 = Student("Priya Patel", 102, "BCA")
 
-# 3. Accessing methods through objects
-print("Details of Student 1:")
+print("\nDetails of Student 1:")
 student1.display_details()
 
 print("Details of Student 2:")
 student2.display_details()
 
-# 4. Modifying object properties
-print("Updating Amit's course to MCA...\n")
+# Modifying an object's property
 student1.course = "MCA"
-
 print("Updated Details of Student 1:")
 student1.display_details()
+
+
+"""
+===========================
+Expected Output:
+===========================
+=== Class and Objects in Python ===
+
+Details of Student 1:
+Student Name : Amit Sharma
+Roll Number  : 101
+Course       : BCA
+College      : IMRD, Shahada
+------------------------------
+
+Details of Student 2:
+Student Name : Priya Patel
+Roll Number  : 102
+Course       : BCA
+College      : IMRD, Shahada
+------------------------------
+
+Updated Details of Student 1:
+Student Name : Amit Sharma
+Roll Number  : 101
+Course       : MCA
+College      : IMRD, Shahada
+------------------------------
+===========================
+"""

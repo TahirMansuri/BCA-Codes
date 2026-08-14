@@ -10,42 +10,60 @@ Aim          : Write a program to demonstrate the use of list &
 ===================================================================
 """
 
-print("=== List and Related Functions ===\n")
+print("=== List and Related Functions ===")
 
-# Daily Example: Managing a list of subjects for a student
 subjects = ["Python", "Data Structures", "Accounting"]
-print(f"Initial List of Subjects: {subjects}")
+print("Initial List :", subjects)
 
-print("\n--- 1. Adding Elements ---")
-# append() adds an item to the end of the list
+print("\n--- Adding Elements ---")
 subjects.append("Ethical Hacking")
-print(f"After append('Ethical Hacking') : {subjects}")
+print("After append :", subjects)
 
-# insert() adds an item at a specific index
 subjects.insert(1, "Web Technologies")
-print(f"After insert(1, 'Web Tech')   : {subjects}")
+print("After insert :", subjects)
 
-print("\n--- 2. Removing Elements ---")
-# remove() removes the first matching value
+print("\n--- Removing Elements ---")
 subjects.remove("Accounting")
-print(f"After remove('Accounting')    : {subjects}")
+print("After remove :", subjects)
 
-# pop() removes and returns the item at the given index (or last item if no index)
-last_subject = subjects.pop()
-print(f"After pop() [Removed '{last_subject}'] : {subjects}")
+removed = subjects.pop()
+print("Removed item :", removed)
+print("After pop    :", subjects)
 
-print("\n--- 3. List Information ---")
-# len() gives the number of items
-print(f"Total number of subjects: {len(subjects)}")
+print("\n--- List Information ---")
+print("Total subjects :", len(subjects))
+print("Index of Python:", subjects.index("Python"))
 
-# index() finds the position of an item
-print(f"Index of 'Python': {subjects.index('Python')}")
-
-print("\n--- 4. Sorting and Reversing ---")
-# sort() sorts the list alphabetically or numerically
+print("\n--- Sorting and Reversing ---")
 subjects.sort()
-print(f"Alphabetically Sorted List: {subjects}")
+print("After sort    :", subjects)
 
-# reverse() reverses the order of the list
 subjects.reverse()
-print(f"Reversed List: {subjects}")
+print("After reverse :", subjects)
+
+
+"""
+===========================
+Expected Output:
+===========================
+=== List and Related Functions ===
+Initial List : ['Python', 'Data Structures', 'Accounting']
+
+--- Adding Elements ---
+After append : ['Python', 'Data Structures', 'Accounting', 'Ethical Hacking']
+After insert : ['Python', 'Web Technologies', 'Data Structures', 'Accounting', 'Ethical Hacking']
+
+--- Removing Elements ---
+After remove : ['Python', 'Web Technologies', 'Data Structures', 'Ethical Hacking']
+Removed item : Ethical Hacking
+After pop    : ['Python', 'Web Technologies', 'Data Structures']
+
+--- List Information ---
+Total subjects : 3
+Index of Python: 0
+
+--- Sorting and Reversing ---
+After sort    : ['Data Structures', 'Python', 'Web Technologies']
+After reverse : ['Web Technologies', 'Python', 'Data Structures']
+===========================
+"""
