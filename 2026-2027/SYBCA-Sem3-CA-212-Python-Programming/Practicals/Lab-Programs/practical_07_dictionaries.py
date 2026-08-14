@@ -12,38 +12,40 @@ Aim          : Write a program to demonstrate the use of Dictionary
 
 print("=== Dictionary and Related Functions ===")
 
-student_profile = {
-    "roll_no": 105,
-    "name": "Rohan Gupta",
-    "course": "BCA",
-    "grade": "A"
+# Dictionary - Country Name as Key, Capital as Value
+country_capital = {
+    "India": "New Delhi",
+    "USA": "Washington D.C.",
+    "France": "Paris",
+    "Japan": "Tokyo"
 }
 
-print("Student Profile :", student_profile)
+print("Country - Capital Dictionary :", country_capital)
 
 print("\n--- Accessing Values ---")
-print("Student Name   :", student_profile["name"])
-print("Student Course :", student_profile.get("course"))
+print("Capital of India  :", country_capital["India"])
+print("Capital of France :", country_capital.get("France"))
 
-print("\n--- Adding and Updating ---")
-student_profile["city"] = "Shahada"
-print("After adding city  :", student_profile)
+print("\n--- Adding a New Country ---")
+country_capital["Germany"] = "Berlin"
+print("After adding Germany :", country_capital)
 
-student_profile["grade"] = "A+"
-print("After updating grade:", student_profile)
+print("\n--- Updating a Value ---")
+country_capital["USA"] = "Washington"
+print("After updating USA   :", country_capital)
 
-print("\n--- Removing Elements ---")
-student_profile.pop("city")
-print("After pop city     :", student_profile)
+print("\n--- Removing a Country ---")
+country_capital.pop("Japan")
+print("After removing Japan :", country_capital)
 
 print("\n--- Dictionary Methods ---")
-print("Keys   :", student_profile.keys())
-print("Values :", student_profile.values())
-print("Items  :", student_profile.items())
+print("Keys   :", country_capital.keys())
+print("Values :", country_capital.values())
+print("Items  :", country_capital.items())
 
 print("\n--- Looping through Dictionary ---")
-for key, value in student_profile.items():
-    print(key, ":", value)
+for country, capital in country_capital.items():
+    print("Country:", country, " --> Capital:", capital)
 
 
 """
@@ -51,28 +53,30 @@ for key, value in student_profile.items():
 Expected Output:
 ===========================
 === Dictionary and Related Functions ===
-Student Profile : {'roll_no': 105, 'name': 'Rohan Gupta', 'course': 'BCA', 'grade': 'A'}
+Country - Capital Dictionary : {'India': 'New Delhi', 'USA': 'Washington D.C.', 'France': 'Paris', 'Japan': 'Tokyo'}
 
 --- Accessing Values ---
-Student Name   : Rohan Gupta
-Student Course : BCA
+Capital of India  : New Delhi
+Capital of France : Paris
 
---- Adding and Updating ---
-After adding city  : {'roll_no': 105, 'name': 'Rohan Gupta', 'course': 'BCA', 'grade': 'A', 'city': 'Shahada'}
-After updating grade: {'roll_no': 105, 'name': 'Rohan Gupta', 'course': 'BCA', 'grade': 'A+', 'city': 'Shahada'}
+--- Adding a New Country ---
+After adding Germany : {'India': 'New Delhi', 'USA': 'Washington D.C.', 'France': 'Paris', 'Japan': 'Tokyo', 'Germany': 'Berlin'}
 
---- Removing Elements ---
-After pop city     : {'roll_no': 105, 'name': 'Rohan Gupta', 'course': 'BCA', 'grade': 'A+'}
+--- Updating a Value ---
+After updating USA   : {'India': 'New Delhi', 'USA': 'Washington', 'France': 'Paris', 'Japan': 'Tokyo', 'Germany': 'Berlin'}
+
+--- Removing a Country ---
+After removing Japan : {'India': 'New Delhi', 'USA': 'Washington', 'France': 'Paris', 'Germany': 'Berlin'}
 
 --- Dictionary Methods ---
-Keys   : dict_keys(['roll_no', 'name', 'course', 'grade'])
-Values : dict_values([105, 'Rohan Gupta', 'BCA', 'A+'])
-Items  : dict_items([('roll_no', 105), ('name', 'Rohan Gupta'), ('course', 'BCA'), ('grade', 'A+')])
+Keys   : dict_keys(['India', 'USA', 'France', 'Germany'])
+Values : dict_values(['New Delhi', 'Washington', 'Paris', 'Berlin'])
+Items  : dict_items([('India', 'New Delhi'), ('USA', 'Washington'), ('France', 'Paris'), ('Germany', 'Berlin')])
 
 --- Looping through Dictionary ---
-roll_no : 105
-name : Rohan Gupta
-course : BCA
-grade : A+
+Country: India  --> Capital: New Delhi
+Country: USA  --> Capital: Washington
+Country: France  --> Capital: Paris
+Country: Germany  --> Capital: Berlin
 ===========================
 """

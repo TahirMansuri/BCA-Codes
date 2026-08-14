@@ -12,31 +12,39 @@ Aim          : Write a program to demonstrate the use of Tuple.
 print("=== Tuple and its Operations ===")
 
 # Tuple is immutable - values cannot be changed after creation
-coordinates = (21.5451, 74.4716)
-print("Shahada Coordinates :", coordinates)
+fruits = ("Mango", "Apple", "Banana", "Orange", "Grapes")
+print("Fruits Tuple :", fruits)
 
 print("\n--- Accessing Elements ---")
-print("Latitude  :", coordinates[0])
-print("Longitude :", coordinates[1])
+print("First Fruit  :", fruits[0])
+print("Last Fruit   :", fruits[-1])
+print("Second Fruit :", fruits[1])
+
+print("\n--- Slicing a Tuple ---")
+print("First 3 fruits  :", fruits[0:3])
+print("Last 2 fruits   :", fruits[3:])
 
 print("\n--- Tuple Unpacking ---")
-(lat, lon) = coordinates
-print("Unpacked Lat :", lat)
-print("Unpacked Lon :", lon)
+(f1, f2, f3, f4, f5) = fruits
+print("Unpacked - f1 :", f1, " f2 :", f2, " f3 :", f3)
 
 print("\n--- Tuple Concatenation ---")
-tuple1 = (1, 2, 3)
-tuple2 = (4, 5, 6)
-combined = tuple1 + tuple2
-print("Tuple 1    :", tuple1)
-print("Tuple 2    :", tuple2)
-print("Combined   :", combined)
+more_fruits = ("Pineapple", "Papaya")
+all_fruits = fruits + more_fruits
+print("Original Fruits  :", fruits)
+print("Added Fruits     :", more_fruits)
+print("All Fruits       :", all_fruits)
 
 print("\n--- Built-in Tuple Methods ---")
-sample = (10, 20, 30, 20, 40, 20)
-print("Sample Tuple   :", sample)
-print("Count of 20    :", sample.count(20))
-print("Index of 30    :", sample.index(30))
+sample = ("Mango", "Apple", "Mango", "Banana", "Mango")
+print("Sample Tuple      :", sample)
+print("Count of Mango    :", sample.count("Mango"))
+print("Index of Apple    :", sample.index("Apple"))
+
+print("\n--- Other Tuple Operations ---")
+print("Total fruits      :", len(fruits))
+print("Is Mango present? :", "Mango" in fruits)
+print("Is Cherry present?:", "Cherry" in fruits)
 
 
 """
@@ -44,24 +52,33 @@ print("Index of 30    :", sample.index(30))
 Expected Output:
 ===========================
 === Tuple and its Operations ===
-Shahada Coordinates : (21.5451, 74.4716)
+Fruits Tuple : ('Mango', 'Apple', 'Banana', 'Orange', 'Grapes')
 
 --- Accessing Elements ---
-Latitude  : 21.5451
-Longitude : 74.4716
+First Fruit  : Mango
+Last Fruit   : Grapes
+Second Fruit : Apple
+
+--- Slicing a Tuple ---
+First 3 fruits  : ('Mango', 'Apple', 'Banana')
+Last 2 fruits   : ('Orange', 'Grapes')
 
 --- Tuple Unpacking ---
-Unpacked Lat : 21.5451
-Unpacked Lon : 74.4716
+Unpacked - f1 : Mango  f2 : Apple  f3 : Banana
 
 --- Tuple Concatenation ---
-Tuple 1    : (1, 2, 3)
-Tuple 2    : (4, 5, 6)
-Combined   : (1, 2, 3, 4, 5, 6)
+Original Fruits  : ('Mango', 'Apple', 'Banana', 'Orange', 'Grapes')
+Added Fruits     : ('Pineapple', 'Papaya')
+All Fruits       : ('Mango', 'Apple', 'Banana', 'Orange', 'Grapes', 'Pineapple', 'Papaya')
 
 --- Built-in Tuple Methods ---
-Sample Tuple   : (10, 20, 30, 20, 40, 20)
-Count of 20    : 3
-Index of 30    : 2
+Sample Tuple      : ('Mango', 'Apple', 'Mango', 'Banana', 'Mango')
+Count of Mango    : 3
+Index of Apple    : 1
+
+--- Other Tuple Operations ---
+Total fruits      : 5
+Is Mango present? : True
+Is Cherry present?: False
 ===========================
 """
