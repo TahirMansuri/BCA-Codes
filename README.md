@@ -22,48 +22,51 @@ Instead of searching through chat groups, students can find all verified, well-c
 
 ## 📚 Quick Navigation Index
 
-| Academic Year | Class & Sem | Subject | Language | Folder Link |
-|:---:|:---:|:---:|:---:|:---:|
-| **2026–2027** | **SYBCA (Sem-III)** | Python Programming | Python 🐍 | [📂 View Codes](./2026-2027/SYBCA-Sem3-Python) |
-| **2026–2027** | **TYBCA (Sem-V)** | Web Development with PHP | PHP 🐘 | [📂 View Codes](./2026-2027/TYBCA-Sem5-PHP) |
-| **2026–2027** | **FYBCA (Sem-I/II)** | C++ Programming *(Upcoming)* | C++ ⚡ | [📂 View Codes](./2026-2027/FYBCA-Sem1-CPP) |
+| Academic Year | Class & Sem | Course Code & Title | Category | Folder Link |
+|:---:|:---:|:---|:---:|:---:|
+| **2026–2027** | **SYBCA (Sem-III)** | **CA-212: Python Programming** | Theory & Practical | [📂 View Codes](./2026-2027/SYBCA-Sem3-CA-212-Python-Programming) |
+| **2026–2027** | **TYBCA (Sem-V)** | **CA-317(A): Practical based on Web Tech-I (PHP)** | Practical Lab | [📂 View Codes](./2026-2027/TYBCA-Sem5-CA-317A-Web-Technologies-I) |
+| **2026–2027** | **FYBCA (Sem-I/II)** | **C++ Programming** *(Upcoming)* | Theory & Practical | [📂 View Codes](./2026-2027/FYBCA-Sem1-CPP) |
+| **Curriculum** | **FY, SY, TY BCA** | **Official Syllabus PDF Archive** | University Syllabus | [📑 View Syllabus](./Syllabus) |
 
 ---
 
 ## 🗂️ Repository Architecture & Organization
 
-The repository follows a clean, hierarchical structure so that you can easily locate programs corresponding to your syllabus:
-
 ```text
 BCA-Codes/
 │
+├── Syllabus/                              # Official FY, SY & TY BCA University Syllabus PDFs
+│   ├── README.md
+│   ├── FYBCA-Syllabus.pdf
+│   ├── SYBCA-Syllabus.pdf
+│   └── TYBCA-Syllabus.pdf
+│
 ├── 2026-2027/
-│   ├── SYBCA-Sem3-Python/
-│   │   ├── README.md                      # Subject syllabus, setup guide & index
-│   │   ├── Unit-01-Python-Basics/         # Variables, Datatypes, Operators, I/O
-│   │   ├── Unit-02-Control-Flow/          # If-Else, Loops, Pattern programs
-│   │   ├── Unit-03-Data-Structures/       # Lists, Tuples, Sets, Dictionaries
-│   │   ├── Unit-04-Functions-Modules/     # User functions, Built-in & custom modules
-│   │   ├── Unit-05-OOP-Concepts/          # Classes, Objects, Inheritance, Polymorphism
-│   │   ├── Lab-Practicals/                # University practical slip programs
-│   │   └── Assignments/                   # Questions & Solved program solutions
-│   │       ├── Assignment-01-Basics-and-Operators/
-│   │       └── Assignment-02-Control-Structures/
+│   ├── SYBCA-Sem3-CA-212-Python-Programming/
+│   │   ├── README.md                      # Syllabus & evaluation matrix
+│   │   ├── Unit-01-Introduction-to-Python/# Lecture demo programs
+│   │   ├── Unit-02-Basic-of-Python-Programming/
+│   │   ├── Unit-03-Functions-and-Modules/
+│   │   ├── Unit-04-OOP-and-Libraries/
+│   │   ├── Practicals/                    # Practical write-up sheets & lab programs
+│   │   │   ├── Practical-Sheets/          # Lab journal write-up templates for students
+│   │   │   └── Lab-Programs/              # Executable .py source code files
+│   │   └── Assignments/                   # Questions & Solved assignments
 │   │
-│   ├── TYBCA-Sem5-PHP/
-│   │   ├── README.md                      # Subject syllabus, XAMPP setup & index
-│   │   ├── Unit-01-PHP-Basics/            # Syntax, Variables, Echo/Print, Arrays
-│   │   ├── Unit-02-Form-Handling-GET-POST/# Forms, Validations, Sticky forms
-│   │   ├── Unit-03-State-Management/      # Sessions, Cookies, Authentication
-│   │   ├── Unit-04-MySQL-Database/        # CRUD Operations, Prepared statements
-│   │   ├── Lab-Practicals/                # University practical slip programs
-│   │   └── Assignments/                   # Questions & Solved program solutions
-│   │       └── Assignment-01-PHP-Basics/
+│   ├── TYBCA-Sem5-CA-317A-Web-Technologies-I/
+│   │   ├── README.md                      # Course outline & XAMPP guide
+│   │   ├── Unit-01-PHP-Basics/            # Lecture demo programs
+│   │   ├── Unit-02-Form-Handling/
+│   │   ├── Practicals/                    # Practical write-up sheets & lab programs
+│   │   │   ├── Practical-Sheets/          # Lab journal write-up templates for students
+│   │   │   └── Lab-Programs/              # Executable .php source code files
+│   │   └── Assignments/                   # Questions & Solved assignments
 │   │
 │   └── FYBCA-Sem1-CPP/
-│       └── README.md                      # Upcoming C++ Subject Module
+│       └── README.md                      # Upcoming C++ Module
 │
-└── 2027-2028/                             # Next Academic Year Archive (Maintained separately)
+└── 2027-2028/                             # Next Academic Year Archive
 ```
 
 ---
