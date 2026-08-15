@@ -17,48 +17,59 @@ capitals = {
     "France": "Paris"
 }
 print("Original Dictionary :", capitals)
+# Output: {'India': 'New Delhi', 'USA': 'Washington D.C.', 'France': 'Paris'}
 
 # Accessing Elements
 print("\n--- Accessing Elements ---")
-print("Capital of India :", capitals["India"])
+print("Capital of India :", capitals["India"])  # Output: New Delhi
 # Using get() method (prevents error if key does not exist)
-print("Capital of Japan :", capitals.get("Japan"))
-print("Capital of France:", capitals.get("France"))
+print("Capital of Japan :", capitals.get("Japan"))  # Output: None
+print("Capital of France:", capitals.get("France")) # Output: Paris
 
 # Adding and Updating Elements
 print("\n--- Adding & Updating ---")
 # Adding new key-value pair
 capitals["Japan"] = "Tokyo"
 print("After adding Japan   :", capitals)
+# Output: {'India': 'New Delhi', 'USA': 'Washington D.C.', 'France': 'Paris', 'Japan': 'Tokyo'}
 
 # Updating an existing value
 capitals["USA"] = "Washington"
 print("After updating USA   :", capitals)
+# Output: {'India': 'New Delhi', 'USA': 'Washington', 'France': 'Paris', 'Japan': 'Tokyo'}
 
 # Dictionary Methods
 print("\n--- Dictionary Methods ---")
 # keys()
-print("All Countries (Keys) :", list(capitals.keys()))
+print("All Countries (Keys) :", list(capitals.keys()))  # Output: ['India', 'USA', 'France', 'Japan']
 
 # values()
-print("All Capitals (Values):", list(capitals.values()))
+print("All Capitals (Values):", list(capitals.values())) # Output: ['New Delhi', 'Washington', 'Paris', 'Tokyo']
 
 # items()
 print("All Items (Pairs)    :", list(capitals.items()))
+# Output: [('India', 'New Delhi'), ('USA', 'Washington'), ('France', 'Paris'), ('Japan', 'Tokyo')]
 
 # update() - merging another dictionary
 capitals.update({"Germany": "Berlin", "France": "Paris (Updated)"})
 print("After update() method:", capitals)
+# Output: {'India': 'New Delhi', 'USA': 'Washington', 'France': 'Paris (Updated)', 'Japan': 'Tokyo', 'Germany': 'Berlin'}
 
 # pop() - removes specific key and returns value
 popped_capital = capitals.pop("Germany")
-print("Popped capital       :", popped_capital)
+print("Popped capital       :", popped_capital)        # Output: Berlin
 print("After pop('Germany') :", capitals)
+# Output: {'India': 'New Delhi', 'USA': 'Washington', 'France': 'Paris (Updated)', 'Japan': 'Tokyo'}
 
 # Traversing
 print("\n--- Traversing Dictionary ---")
 for country, capital in capitals.items():
     print("Country:", country, " | Capital:", capital)
+# Output:
+# Country: India  | Capital: New Delhi
+# Country: USA  | Capital: Washington
+# Country: France  | Capital: Paris (Updated)
+# Country: Japan  | Capital: Tokyo
 
 
 """

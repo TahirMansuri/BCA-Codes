@@ -15,65 +15,69 @@ numbers = [10, 20, 30, 40, 50]
 names = ["Amit", "Priya", "Rahul"]
 
 print("--- Initial Lists ---")
-print("Numbers List :", numbers)
-print("Names List   :", names)
+print("Numbers List :", numbers)            # Output: [10, 20, 30, 40, 50]
+print("Names List   :", names)              # Output: ['Amit', 'Priya', 'Rahul']
 
 # Accessing and Traversing
 print("\n--- Accessing & Traversing ---")
-print("First element of numbers :", numbers[0])
-print("Last element of numbers  :", numbers[-1])
+print("First element of numbers :", numbers[0])   # Output: 10
+print("Last element of numbers  :", numbers[-1])  # Output: 50
 
 print("Traversing names list using loop:")
 for name in names:
     print("Hello", name)
+# Output:
+# Hello Amit
+# Hello Priya
+# Hello Rahul
 
 # List Operations
 print("\n--- List Operations ---")
 list_a = [1, 2]
 list_b = [3, 4]
-print("Concatenation (list_a + list_b) :", list_a + list_b)
-print("Repetition (list_a * 3)         :", list_a * 3)
-print("List Slicing (numbers[1:4])     :", numbers[1:4])
+print("Concatenation (list_a + list_b) :", list_a + list_b)  # Output: [1, 2, 3, 4]
+print("Repetition (list_a * 3)         :", list_a * 3)      # Output: [1, 2, 1, 2, 1, 2]
+print("List Slicing (numbers[1:4])     :", numbers[1:4])    # Output: [20, 30, 40]
 
 # List Methods
 print("\n--- List Methods ---")
 my_list = [20, 10, 40, 30]
-print("Original my_list :", my_list)
+print("Original my_list :", my_list)        # Output: [20, 10, 40, 30]
 
 # append() and extend()
 my_list.append(50)
-print("After append(50)  :", my_list)
+print("After append(50)  :", my_list)       # Output: [20, 10, 40, 30, 50]
 
 my_list.extend([60, 70])
-print("After extend()    :", my_list)
+print("After extend()    :", my_list)       # Output: [20, 10, 40, 30, 50, 60, 70]
 
 # insert()
 my_list.insert(1, 15)
-print("After insert(1,15):", my_list)
+print("After insert(1,15):", my_list)       # Output: [20, 15, 10, 40, 30, 50, 60, 70]
 
 # remove() and pop()
 my_list.remove(40)
-print("After remove(40)  :", my_list)
+print("After remove(40)  :", my_list)       # Output: [20, 15, 10, 30, 50, 60, 70]
 
 popped_val = my_list.pop()
-print("Popped value      :", popped_val)
-print("After pop()       :", my_list)
+print("Popped value      :", popped_val)     # Output: 70
+print("After pop()       :", my_list)       # Output: [20, 15, 10, 30, 50, 60]
 
 # sort() and reverse()
 my_list.sort()
-print("After sort()      :", my_list)
+print("After sort()      :", my_list)       # Output: [10, 15, 20, 30, 50, 60]
 
 my_list.reverse()
-print("After reverse()   :", my_list)
+print("After reverse()   :", my_list)       # Output: [60, 50, 30, 20, 15, 10]
 
 # Built-in Functions
 print("\n--- List Built-in Functions ---")
 scores = [10, 20, 30, 40]
-print("Scores List :", scores)
-print("Length      :", len(scores))
-print("Maximum     :", max(scores))
-print("Minimum     :", min(scores))
-print("Sum         :", sum(scores))
+print("Scores List :", scores)              # Output: [10, 20, 30, 40]
+print("Length      :", len(scores))         # Output: 4
+print("Maximum     :", max(scores))         # Output: 40
+print("Minimum     :", min(scores))         # Output: 10
+print("Sum         :", sum(scores))         # Output: 100
 
 
 """
