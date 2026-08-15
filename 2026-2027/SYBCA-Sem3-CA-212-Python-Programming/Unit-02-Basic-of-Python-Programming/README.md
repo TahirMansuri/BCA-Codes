@@ -12,8 +12,9 @@
 
 ---
 
-## 📂 Programs Catalog (Coming Soon)
-- `01_string_operations_and_methods.py`
-- `02_list_manipulations_and_methods.py`
-- `03_tuple_operations.py`
-- `04_dictionary_operations_and_methods.py`
+## 📂 Programs Catalog
+- [🐍 01_string_operations_and_methods.py](./01_string_operations_and_methods.py)
+- [🐍 02_list_manipulations_and_methods.py](./02_list_manipulations_and_methods.py)
+- [🐍 03_tuple_operations.py](./03_tuple_operations.py)
+- [🐍 04_dictionary_operations_and_methods.py](./04_dictionary_operations_and_methods.py)
+
