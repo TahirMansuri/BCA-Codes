@@ -9,11 +9,11 @@ Description  : Basic print statements and formatted output in Python.
 ===================================================================
 """
 
-print("Hello, Welcome to SYBCA Python Programming at IMRD Shahada!")
+print("Hello, Welcome to SYBCA Python Programming at IMRD Shahada!")  # Output: Hello, Welcome to SYBCA Python Programming at IMRD Shahada!
 
 student_name = "BCA Student"
 semester = 3
-print("Student:", student_name, "| Semester:", semester)
+print("Student:", student_name, "| Semester:", semester)  # Output: Student: BCA Student | Semester: 3
 
 college = "IMRD, Shahada"
-print("Welcome to", college, "- Academic Year 2026-2027")
+print("Welcome to", college, "- Academic Year 2026-2027")  # Output: Welcome to IMRD, Shahada - Academic Year 2026-2027

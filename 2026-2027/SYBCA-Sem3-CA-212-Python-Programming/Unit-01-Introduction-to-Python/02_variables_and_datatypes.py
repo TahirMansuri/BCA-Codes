@@ -16,13 +16,14 @@ student_name = "Amit Patil"
 is_regular = True
 
 print("--- Data Types & type() function ---")
-print("roll_no:", roll_no, "  Type:", type(roll_no))
-print("percentage:", percentage, "  Type:", type(percentage))
-print("student_name:", student_name, "  Type:", type(student_name))
-print("is_regular:", is_regular, "  Type:", type(is_regular))
+print("roll_no:", roll_no, "  Type:", type(roll_no))                  # Output: roll_no: 101   Type: <class 'int'>
+print("percentage:", percentage, "  Type:", type(percentage))          # Output: percentage: 87.5   Type: <class 'float'>
+print("student_name:", student_name, "  Type:", type(student_name))    # Output: student_name: Amit Patil   Type: <class 'str'>
+print("is_regular:", is_regular, "  Type:", type(is_regular))          # Output: is_regular: True   Type: <class 'bool'>
 
 print("\n--- Taking User Input ---")
+# Example if user enters 10 and 20:
 num1 = int(input("Enter first integer: "))
 num2 = int(input("Enter second integer: "))
 total = num1 + num2
-print("Sum of", num1, "and", num2, "=", total)
+print("Sum of", num1, "and", num2, "=", total)                        # Output: Sum of 10 and 20 = 30 (for input 10, 20)

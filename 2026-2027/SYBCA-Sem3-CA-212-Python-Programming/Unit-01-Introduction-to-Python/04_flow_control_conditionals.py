@@ -15,11 +15,12 @@ Description  : Demonstrates conditional control flow:
 
 print("=== Student Grade & Result System ===")
 
+# Example trace: if user enters 80:
 marks = float(input("Enter student overall marks (0 - 100): "))
 
 # 1. Validation using Nested If
 if 0 <= marks <= 100:
-    print("Valid marks entered. Evaluating grade...")
+    print("Valid marks entered. Evaluating grade...")                 # Output (for 80): Valid marks entered. Evaluating grade...
     
     # 2. if-elif-else ladder
     if marks >= 75:
@@ -33,11 +34,11 @@ if 0 <= marks <= 100:
     else:
         grade = "Fail (F)"
         
-    print("Student Result:", grade)
+    print("Student Result:", grade)                                    # Output (for 80): Student Result: Distinction (A+)
     
     # 3. Simple if & if-else
     if marks >= 40:
-        print("Status: Eligible for Next Semester!")
+        print("Status: Eligible for Next Semester!")                  # Output (for 80): Status: Eligible for Next Semester!
     else:
         print("Status: Needs to appear for Remedial Exam.")
 else:
